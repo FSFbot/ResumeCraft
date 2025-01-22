@@ -87,11 +87,13 @@ export const MenuBar = ({ editor }: MenubarProps) => {
                         {ACTIONS.map((action) => (
                              <Tooltip key={action.label} content = {action.label}>
                                    <Button
+                                        
                                         onClick={action.action}
                                         className="p-2 h-max"
                                         variant="ghost"
                                         type="button"
                                 >
+                                        <action.icon className="w-4 h-4"/>
                                 </Button>
                              </Tooltip>
                         ))}

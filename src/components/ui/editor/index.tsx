@@ -46,7 +46,7 @@ export const Editor = ({ value, onChange, className }: EditorProps) => {
         })
         return (
                 <div className={cn(
-                        "bg-background border border-muted roundes-2xl w-full flex flex-col",
+                        "bg-background border border-muted rounded-2xl w-full flex flex-col",
                 )}>
                         <MenuBar editor= {editor}/>
                         <div className='h-full [&>div]:h-full flex flex-col overflow-y-auto'>
