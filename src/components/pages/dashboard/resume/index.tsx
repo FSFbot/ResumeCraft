@@ -8,14 +8,13 @@ import { InfosSidebar } from "./infos-sidebar"
 import { ResumeContent } from "./resume-content"
 import { StructureSidebar } from "./structure-sidebar"
 import { FormProvider, useForm } from "react-hook-form"
-import { ResumeData } from "@/@types/types"
 
 export const ResumePage = () => {
         const defaultValues: ResumeData = {
                 content: {
                         image: {
-                              url: "escreva aqui a url da sua foto",
-                              visible: true  
+                                url: "escreva aqui a url da sua foto",
+                                visible: true
                         },
                         infos: {
                                 email: "",
@@ -24,7 +23,24 @@ export const ResumePage = () => {
                                 location: "",
                                 phone: "",
                                 website: ""
-                        }
+                        },
+                        summary: "",
+                        certifications: [],
+                        educations: [],
+                        experiences: [],
+                        languages: [],
+                        projects: [],
+                        skills: [],
+                        socialMedias: [],
+                },
+                structure: {
+                        template: undefined,
+                        colorTheme: "",
+                        layout: {
+                                mainSections: [],
+                                sidebarSections: []
+                        },
+                        language: "english"
                 }
         }
         const methods = useForm<ResumeData>({defaultValues});
