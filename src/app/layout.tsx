@@ -3,6 +3,7 @@ import { Nunito, Nunito_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "@/components/ui/toaster";
 
 const fontSans = Nunito_Sans({ subsets: ["latin"], variable: "--font-sans" });
 const fontTitle = Nunito({ subsets: ["latin"], variable: "--font-title" });
@@ -25,6 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           {children}
+          <Toaster/>
         </ThemeProvider>
       </body>
     </html>

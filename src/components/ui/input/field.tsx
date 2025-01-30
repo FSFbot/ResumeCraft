@@ -1,5 +1,5 @@
 import {Controller, useFormContext} from "react-hook-form";
-import {ComponentProps} from "react";
+import {ComponentProps, ReactNode} from "react";
 import {Input} from "./index";
 import { FieldWrapper } from "../field-wrapper";
 
@@ -8,6 +8,7 @@ type InputFieldProps = ComponentProps<typeof Input> &  {
     label: string;
     name: string;
     constainerClassName?: string;
+    extraContent?: (value: string) => ReactNode;
 }
 export const InputField = ({label, name,required,constainerClassName, ...props}:InputFieldProps) =>{
     const {control} = useFormContext();
