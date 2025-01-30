@@ -34,16 +34,28 @@ export const ResumePage = () => {
                         socialMedias: [],
                 },
                 structure: {
-                        template: undefined,
-                        colorTheme: "",
+                        template: "ditto",
+                        colorTheme: "slate",
+                        language: "portuguese",
                         layout: {
-                                mainSections: [],
-                                sidebarSections: []
+                                mainSections: [
+                                        { key: "socialMedias" },
+                                        { key: "summary" },
+                                        { key: "experiences" },
+                                        { key: "educations" },
+                                        { key: "certifications" },
+                                        { key: "projects" },
+
+                                ],
+                                sidebarSections: [
+                                        { key: "languages" },
+                                        { key: "skills" }
+                                ]
                         },
-                        language: "english"
+
                 }
         }
-        const methods = useForm<ResumeData>({defaultValues});
+        const methods = useForm<ResumeData>({ defaultValues });
         return (
                 <main className="w-full h-screen overflow-hidden">
                         <FormProvider {...methods}>

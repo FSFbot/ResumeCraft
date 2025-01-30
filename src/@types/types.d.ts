@@ -85,7 +85,14 @@ type ResumeLayoutSection = {
   key: ResumeSections;
 }
 
-type ResumeLanguages = "english" | "spanish" | "french" | "german" | "italian" | "portuguese";
+type ResumeLanguages = 
+  | "portuguese"
+  | "english"
+  | "french"
+  | "german"
+  | "italian"
+  | "spanish";
+
 
 type ResumeStructureData = {
   template: ResumeTemplates;
@@ -96,9 +103,33 @@ type ResumeStructureData = {
   };
   language: ResumeLanguages;
 }
+type ResumeLayoutSection = {
+  id?: string;
+  key: ResumeSections;
+}
 
+type ResumeStructureData = {
+  template: ResumeTemplates;
+  colorTheme: string;
+  layout: {
+    mainSections: ResumeLayoutSection[];
+    sidebarSections: ResumeLayoutSection[];
+  };
+  language: ResumeLanguages;
+}
 type ResumeData = {
   content: ResumeContentData;
   structure: ResumeStructureData;
 }
 ;
+type ResumeSections = 
+  | "certifications"
+  | "educations"
+  | "experiences"
+  | "languages"
+  | "projects"
+  | "skills"
+  | "socialMedias"
+  | "summary";
+
+type ResumeTemplates = "eevee" | "onix" | "jynx" | "ditto";
