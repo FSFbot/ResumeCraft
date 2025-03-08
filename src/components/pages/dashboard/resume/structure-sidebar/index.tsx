@@ -14,7 +14,6 @@ export const StructureSidebar = () => {
                         <ThemeSection/>
                         <Separator className="my-5 "/>
                         <LanguageSection/>
-
                 </aside>
         )
-}
+} 
