@@ -20,7 +20,7 @@ export const UserDropdown = () => {
             <AvatarImage src="https://github.com/shadcn.png" />
             <AvatarFallback>User</AvatarFallback>
           </Avatar>
-          <p>UserMaster</p>
+          <p>Usuario Teste</p>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center" className="w-[var(--radix-dropdown-menu-trigger-width)]">
