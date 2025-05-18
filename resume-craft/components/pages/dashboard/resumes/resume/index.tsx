@@ -30,19 +30,7 @@ export const ResumePage = () => {
       languages: [],
       projects: [],
       skills: [],
-      socialMedias: [{
-        icon: "",
-        name: "Facebook",
-        url: "www.facebook.com",
-        username:"Admin"
-      },
-    {
-        icon: "",
-        name: "Instagram",
-        url: "www.instagram.com",
-        username:"Admin2"
-      }
-    ],
+      socialMedias: [],
       summary: "",
     }
   }
