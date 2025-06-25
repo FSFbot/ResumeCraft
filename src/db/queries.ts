@@ -30,7 +30,6 @@ export const getResumeById = cache(
     const resume = await db.query.resumes.findFirst({
       where: eq(resumes.id, id),
     });
-
     return resume;
   }
 );
